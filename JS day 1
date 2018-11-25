@@ -1,0 +1,66 @@
+JAVA SCRIPT
+
+Java Script is a scripting language. It is used for both Client and server side via node.
+Chrome- V8
+Safari- Web Kit
+Mozilla- Spider Monkey
+IE- Chakra
+
+Primitive Data Types:
+- Number - 2 ways you can declare 1) var a = 123  2) var a = Number(123)// Number constructor  
+- String
+- Boolean
+- Null
+- Undefined
+
+Non-primitive Data types:
+-Array -- 2 ways you can declare arrays. 1) var arr = [1,2,3]  (2) By array literals
+-Object (Hashmap)---- 2 ways you can declare objects. 1) var arr = {a : "1"}   (2) By object literals
+
+SAMPLE FUNCTION PROG:
+
+function multipleOfFiveAndThree(num) {
+    if ((num % 15) == 0) {
+        alert("FOOBAR")
+    } else if (num % 5 == 0) {
+        alert("FOO")
+    } else if (num % 3 == 0) {
+        alert("BAR");
+    }
+}
+
+Sample FOR LOOP for LIST/ARRAY:
+
+var array = [1,2,3,4,5]
+for( var i=0; i<array.length; i++){
+console.log(array[i])
+}     // this uses for loop
+
+Sample for loop for OBJECT:
+var dict = {a : "1", b : "2" }
+//You can access the DICT using 1) dict['a'] or dict.a
+for (var i in dict){ 
+console.log(dict[i])
+}
+
+
+
+
+Sample prog for finding TYPE OF:
+
+function isCalled(ab) {
+
+    //console.log(Object.prototype.toString.call(ab))
+
+    if (Object.prototype.toString.call(ab) == "[object Array]") {
+        console.log("Array")
+    } else if (Object.prototype.toString.call(ab) == "[object Object]") {
+        console.log("Object")
+    } else if (Object.prototype.toString.call(ab) == "[object Null]") {
+        console.log("Null")
+    } else {
+        console.log(typeof ab)
+    }
+}
+
+
